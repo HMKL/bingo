@@ -27,38 +27,40 @@ button.addEventListener('click', () => {
   link.classList.toggle('d');
 });
 
-const swiper1 = new Swiper('.mySwiper', {
-  cssMode: true,
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    // dynamicBullets: true,
-  },
-  // mousewheel: true,
-  keyboard: true,
-});
+// const swiper1 = new Swiper('.mySwiper', {
+//   cssMode: true,
+//   loop: true,
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   pagination: {
+//     el: '.swiper-pagination',
+//     // dynamicBullets: true,
+//   },
+//   // mousewheel: true,
+//   keyboard: true,
+// });
 
-const swiperTestimonial = new Swiper('.testimonialSwiper', {
+const swiperGallery = new Swiper('.gallery', {
   // cssMode: true,
   loop: true,
   centeredSlides: true,
   allowTouchMove: true,
+  slidesPerView: 5,
+  spaceBetween: 10,
   // autoHeight: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
   autoplay: {
-    delay: 2500,
+    delay: 1500,
     disableOnInteraction: false,
   },
   pagination: {
-    // el: '.swiper-pagination',
-    // dynamicBullets: true,
+    el: '.swiper-pagination',
+    dynamicBullets: true,
 
   },
   clickable: true,
