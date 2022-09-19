@@ -32,6 +32,14 @@ ul {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.container-fluid-header::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 .container.header {
   display: flex;
@@ -52,16 +60,7 @@ ul {
   color: #000;
   position: relative;
 }
-.container-fluid-testimonial::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  bottom: 0;
-  height: 145px;
-  background-color: white;
-}
+
 .container-fluid-footer {
   background-color: #222222;
   color: red;
@@ -397,7 +396,7 @@ iframe {
   margin-top: 7px;
   margin-bottom: 3px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .navbar {
     justify-content: space-around !important;
     position: absolute !important;
@@ -530,4 +529,16 @@ iframe {
   opacity: 1;
   top: 0;
   height: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 769px) {
+  .zxc3 {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .zxc3 {
+    flex-direction: row;
+  }
 }

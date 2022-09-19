@@ -503,3 +503,15 @@ ul {
     text-align: center;
   }
 }
+
+@media (min-width: 768px) and (max-width: 769px) {
+  .zxc3 {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .zxc3 {
+    flex-direction: row;
+  }
+}
