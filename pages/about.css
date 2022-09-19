@@ -334,6 +334,7 @@ iframe {
 .posts {
   background-color: #fff;
   padding: 20px 0;
+  text-align: center;
 }
 .posts p {
   margin: 0 0 32px 0;
