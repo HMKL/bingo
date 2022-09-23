@@ -55,7 +55,6 @@ ul {
 }
 .container-fluid-footer {
   background-color: #222222;
-  color: red;
 }
 .navbar {
   background-color: #fff;
@@ -183,7 +182,7 @@ ul {
   border-radius: 100%;
   width: 120px;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .wrap-testimonial i {
   font-size: 60px;
@@ -235,6 +234,7 @@ ul {
   height: auto;
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 .zxc2 {
   width: 100%;
@@ -411,6 +411,7 @@ ul {
   margin-top: 7px;
   margin-bottom: 3px;
 }
+
 @media (min-width: 1200px) {
   .navbar {
     justify-content: space-around !important;
@@ -504,14 +505,20 @@ ul {
   }
 }
 
-@media (min-width: 768px) and (max-width: 769px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .zxc3 {
     flex-direction: row;
   }
-}
-
-@media (min-width: 991px) and (max-width: 1200px) {
-  .zxc3 {
+  .footer-content {
     flex-direction: row;
+  }
+  .content1 {
+    width: 33.3%;
+  }
+  .content2 {
+    width: 25%;
+  }
+  .content3 {
+    width: 16.6%;
   }
 }
