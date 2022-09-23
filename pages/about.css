@@ -27,6 +27,9 @@ a {
 ul {
   padding: 0 !important;
 }
+.container-fluid {
+  padding: 0 !important;
+}
 .container-fluid-header {
   background-image: url(../images/about-header.jpg);
   background-position: center center;
@@ -35,11 +38,13 @@ ul {
   position: relative;
 }
 .container-fluid-header::before {
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   content: "";
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 .container.header {
   display: flex;
@@ -63,7 +68,6 @@ ul {
 
 .container-fluid-footer {
   background-color: #222222;
-  color: red;
 }
 .navbar {
   background-color: #fff;
@@ -143,7 +147,12 @@ ul {
 .d {
   display: block;
 }
-
+.breadcrumb {
+  z-index: 1;
+}
+.breadcrumb ol > li a {
+  color: #fff;
+}
 /* .swiper {
   width: 100%;
   height: 100%;
@@ -223,7 +232,7 @@ ul {
   object-fit: cover;
   padding: 0 15px;
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 .team,
 .video,
@@ -531,14 +540,37 @@ iframe {
   height: 100%;
 }
 
-@media (min-width: 768px) and (max-width: 769px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .zxc3 {
     flex-direction: row;
   }
+  .footer-content {
+    flex-direction: row;
+  }
+  .content1 {
+    width: 33.3%;
+  }
+  .content2 {
+    width: 25%;
+  }
+  .content3 {
+    width: 16.6%;
+  }
 }
-
-@media (min-width: 991px) and (max-width: 1200px) {
+/* @media (min-width: 991px) and (max-width: 1200px) {
   .zxc3 {
     flex-direction: row;
   }
-}
+  .footer-content {
+    flex-direction: row;
+  }
+  .content1 {
+    width: 33.3%;
+  }
+  .content2 {
+    width: 25%;
+  }
+  .content3 {
+    width: 16.6%;
+  }
+} */

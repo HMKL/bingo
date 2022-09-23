@@ -42,7 +42,7 @@ button.addEventListener('click', () => {
 //   keyboard: true,
 // });
 
-const swiperGallery = new Swiper('.gallery', {
+const swiperGallery = new Swiper('#gallery', {
   // cssMode: true,
   loop: true,
   centeredSlides: true,
@@ -54,8 +54,9 @@ const swiperGallery = new Swiper('.gallery', {
   //   nextEl: '.swiper-button-next',
   //   prevEl: '.swiper-button-prev',
   // },
+  speed: 2000,
   autoplay: {
-    delay: 1500,
+    delay: 2500,
     disableOnInteraction: false,
   },
   pagination: {
